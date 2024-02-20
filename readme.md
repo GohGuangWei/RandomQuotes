@@ -1,0 +1,1 @@
+Website that displays random quotes. Inspired by the website https://altl.io/ It aims to show different types of quotes, ranging from motivational to humorous through different sections.
