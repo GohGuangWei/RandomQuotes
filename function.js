@@ -10,9 +10,10 @@ function loadJson()
 
 
 //replaces html text with a random quote
-function replaceQuote(data) 
+function replaceQuote() 
 {
-    document.getElementById("quotes").innerHTML = data.quotes[0].quote;
+    loadJson();
+    document.getElementById("quotes").innerHTML = "test";
     document.getElementById("name").innerHTML = "Name changed.";
 }
 
