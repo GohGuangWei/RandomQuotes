@@ -1,21 +1,3 @@
-// //fs = file server
-// function readFile()
-// {
-//   const fs = require("fs")
-//   let contents = fs.readFileSync("quotes.txt").toString().split(/\r?\n/)
-//   let size = contents.length
-//   let x = Math.floor((Math.random() * (size)))
-//   return(contents[x])
-// }
-
-// //replaces html text with a random quote
-// function replaceQuote() 
-// {
-//   var test = readFile()
-//   document.getElementById("quotes").innerHTML = test;
-//   document.getElementById("name").innerHTML = "testttt"
-// }
-
 function readFile() 
 {
   //Requests quotes.txt
@@ -27,8 +9,9 @@ function readFile()
       const size = contents.length;  //Determines sizes of array
       const x = Math.floor(Math.random() * size); //Gets random quote based on size
 
-      const object = contents[x].split(",");
-      const quote = new Quote(object[0],object[1]);
+      //Saves to a Quote object
+      const object = contents[x].split(","); //Separates array object with comma
+      const quote = new Quote(object[0],object[1]); //Creates a new Quote object and saves the split strings to be sent
       return quote;
     });
 }
