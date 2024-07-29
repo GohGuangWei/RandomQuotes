@@ -18,8 +18,6 @@ function readFile()
     });
 }
 
-
-
 function replaceQuote() 
 {
   readFile() 
@@ -41,3 +39,5 @@ class Quote
     this.name = name
   }
 }
+
+window.onload = replaceQuote;
