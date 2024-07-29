@@ -5,6 +5,7 @@ body
     margin: 0;
     background-color: #525966;
     color: white;
+    overflow-y: scroll;
 }
 
 div

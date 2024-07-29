@@ -10,11 +10,15 @@ function readFile()
       const x = Math.floor(Math.random() * size); //Gets random quote based on size
 
       //Saves to a Quote object
-      const object = contents[x].split(","); //Separates array object with comma
+      const object = contents[x].split("|"); //Separates array object with comma
+      object[0] = '"' + object[0] + '"';
+      object[1] = '-' + object[1];
       const quote = new Quote(object[0],object[1]); //Creates a new Quote object and saves the split strings to be sent
       return quote;
     });
 }
+
+
 
 function replaceQuote() 
 {
