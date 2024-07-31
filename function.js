@@ -1,7 +1,7 @@
 function readFile() 
 {
   //Requests quotes.txt
-  return fetch('quotes.txt')
+  return fetch('QuoteFolder/motivationalQuotes.txt')
     //When the request returns a response.
     .then(response => response.text()) //Resolves with a string
     .then(data => {

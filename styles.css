@@ -33,15 +33,26 @@ div
     margin: 0px 20px 0px 20px;
 }
 
-.quote
+.quote-select
 {
-
-    text-align: center;
+    padding-top: 25px;
     font-size: 50px;
-    margin: 300px 0px 300px;
+    text-align: center;
 }
 
-.quote p
+.quote-select p
+{
+    margin: 0;
+}
+
+.moti-quote
+{
+    text-align: center;
+    font-size: 50px;
+    padding: 100px 0px 300px;
+}
+
+.moti-quote p
 {
     margin: 0;
 }
@@ -50,3 +61,4 @@ div
 {
     float: right;    
 }
+
